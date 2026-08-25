@@ -162,6 +162,39 @@
     if (e.key === "ArrowRight") stepLightbox(1);
   });
 
+  /* Vuốt (swipe) trái/phải trên mobile để chuyển ảnh trong lightbox. */
+  if (lightbox) {
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var SWIPE_THRESHOLD = 40;
+
+    lightbox.addEventListener(
+      "touchstart",
+      function (e) {
+        if (!e.touches || !e.touches.length) return;
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      },
+      { passive: true }
+    );
+
+    lightbox.addEventListener(
+      "touchend",
+      function (e) {
+        if (!e.changedTouches || !e.changedTouches.length) return;
+        var deltaX = e.changedTouches[0].clientX - touchStartX;
+        var deltaY = e.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(deltaX) < SWIPE_THRESHOLD || Math.abs(deltaX) < Math.abs(deltaY)) return;
+        if (deltaX < 0) {
+          stepLightbox(1);
+        } else {
+          stepLightbox(-1);
+        }
+      },
+      { passive: true }
+    );
+  }
+
   /* ---------- Back to top ---------- */
   var backToTop = document.querySelector(".back-to-top");
   if (backToTop) {
@@ -377,6 +410,22 @@
         el.classList.add("is-visible");
       });
     }
+  }
+
+  /* ---------- Mobile sticky CTA bar: tự ẩn khi đang ở khu vực Form
+     (tránh che nút "Nhận Báo Giá" thật của form khi khách đang điền) ---------- */
+  var mobileCtaBar = document.querySelector(".mobile-cta-bar");
+  var formSection = document.getElementById("lien-he");
+  if (mobileCtaBar && formSection && "IntersectionObserver" in window) {
+    var ctaBarObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          mobileCtaBar.classList.toggle("is-hidden", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.15 }
+    );
+    ctaBarObserver.observe(formSection);
   }
 
   /* ---------- Current year in footer ---------- */
