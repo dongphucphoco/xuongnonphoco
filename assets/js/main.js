@@ -322,6 +322,7 @@
             "Đã ghi nhận yêu cầu. PHOCO sẽ liên hệ lại sớm nhất qua số điện thoại bạn cung cấp." +
               demoNote
           );
+           if (typeof fbq === "function") fbq("track", "Lead");
           if (submitBtn) submitBtn.removeAttribute("disabled");
           form.reset();
         })
@@ -383,4 +384,12 @@
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+   /* ---------- Meta Pixel: su kien Contact khi khach bam goi/Zalo/Messenger ---------- */
+   document.addEventListener("click", function (e) {
+      var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href*="m.me/"], a[href*="zalo.me/"]');
+      if (link && typeof fbq === "function") {
+         fbq("track", "Contact");
+      }
+   });
 })();
