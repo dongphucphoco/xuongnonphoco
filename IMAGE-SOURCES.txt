@@ -1,0 +1,117 @@
+NGUỒN HÌNH ẢNH - LANDING PAGE NÓN ĐỒNG PHỤC PHOCO
+====================================================
+Cập nhật: 24/08/2026
+
+Có 2 nhóm ảnh trong thư mục assets/images/:
+  (A) ẢNH THẬT do PHOCO cung cấp (sản phẩm, đội ngũ, xưởng PHOCO thực tế)
+  (B) ẢNH STOCK MIỄN PHÍ BẢN QUYỀN từ Pexels.com, dùng tạm cho 2 vị trí
+      PHOCO chưa có ảnh thật, đã xác nhận với Phong ngày 24/08/2026.
+      Toàn bộ ảnh nhóm (B) được xác nhận "Free to use" trên trang chi tiết
+      ảnh của Pexels tại thời điểm lấy ảnh. Khi PHOCO có ảnh thật cho các
+      vị trí này, nên thay thế để tăng độ tin cậy. (Cập nhật 24/08/2026:
+      2 ảnh minh họa kỹ thuật "Thêu vi tính" và "In chuyển nhiệt" trước
+      đây dùng ảnh stock, nay đã được thay bằng ảnh thật PHOCO do Phong
+      cung cấp - xem mục (A) - nên nhóm (B) chỉ còn lại 2 ảnh.)
+
+----------------------------------------------------
+(A) ẢNH THẬT DO PHOCO CUNG CẤP
+----------------------------------------------------
+non-ket-danh-muc.webp          - Ảnh thật PHOCO (nón kết đồng phục học sinh)
+non-tai-beo-danh-muc.webp      - Ảnh thật PHOCO
+non-nua-dau-danh-muc.webp      - Ảnh thật PHOCO
+non-phoi-luoi-danh-muc.webp    - Ảnh thật PHOCO (nón phối lưới, khách Ford Bình Phước)
+non-bucket-danh-muc.webp       - Ảnh thật PHOCO (nón bucket, khách Mondelez)
+non-snapback-danh-muc.webp     - Ảnh thật PHOCO
+non-bep-danh-muc.webp          - Ảnh thật PHOCO (nón bếp 3 màu trắng/đen/đỏ)
+gallery-non-ket-01.webp        - Ảnh thật PHOCO
+gallery-non-ket-02.webp        - Ảnh thật PHOCO
+gallery-non-ket-03.webp        - Ảnh thật PHOCO
+gallery-non-ket-04.webp        - Ảnh thật PHOCO
+gallery-non-ket-05.webp        - Ảnh thật PHOCO
+gallery-non-ket-06.webp        - Ảnh thật PHOCO
+gallery-non-ket-07.webp        - Ảnh thật PHOCO
+gallery-non-ket-08.webp        - Ảnh thật PHOCO
+gallery-non-ket-09.webp        - Ảnh thật PHOCO
+gallery-non-ket-10.webp        - Ảnh thật PHOCO (thêu logo phẳng)
+gallery-non-ket-11.webp        - Ảnh thật PHOCO (thêu logo nổi khối, khách Việt Kiều Royal)
+gallery-non-tai-beo-01.webp    - Ảnh thật PHOCO
+gallery-non-tai-beo-02.webp    - Ảnh thật PHOCO
+gallery-non-tai-beo-03.webp    - Ảnh thật PHOCO
+khoa-dan.webp                  - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - cận cảnh khóa
+                                  dán, có khoanh tròn minh họa và logo PHOCO)
+khoa-xo.webp                   - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - cận cảnh khóa
+                                  xỏ, có khoanh tròn minh họa và logo PHOCO)
+khoa-cua-so.webp               - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - cận cảnh khóa
+                                  cửa sổ, có khoanh tròn minh họa và logo PHOCO)
+bang-mau-non.webp              - Ảnh thật PHOCO (các màu nón bucket có sẵn)
+team-photo.webp                - Ảnh thật PHOCO (đội ngũ chụp trước xưởng/showroom)
+staff-portrait-1.webp          - Ảnh thật PHOCO (chân dung nhân sự)
+staff-portrait-2.webp          - Ảnh thật PHOCO (chân dung nhân sự)
+theu-vi-tinh-macro.webp        - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - macro
+                                  logo cờ đỏ sao vàng "Viet Nam" thêu vi tính trên nón,
+                                  thấy rõ đường chỉ - minh họa kỹ thuật "Thêu vi tính")
+in-chuyen-nhiet-macro.webp     - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - máy ép
+                                  nhiệt đang xử lý nón màu xanh dương tại xưởng, hiển thị
+                                  nhiệt độ 160°C - minh họa kỹ thuật "In chuyển nhiệt")
+non-bucket-co-do-sao-vang.webp - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - nón
+                                  bucket đỏ in logo cờ đỏ sao vàng "Viet Nam")
+non-ket-co-do-sao-vang.webp    - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - nón kết
+                                  đỏ in logo cờ đỏ sao vàng "Viet Nam", cầm trên tay)
+gallery-superpro.webp          - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - nón kết
+                                  đen thêu logo khách hàng "Superpro Suspension Parts")
+gallery-coopxtra.webp          - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - nón phối
+                                  lưới trắng thêu logo khách hàng "Co.opXtra", chụp tại
+                                  xưởng thêu với máy thêu Tajima phía sau)
+kho-vai-nguyen-lieu.webp       - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - kho vải
+                                  nguyên liệu nhiều màu sắc tại xưởng)
+logo-phoco.png                 - Logo gốc do PHOCO cung cấp (không chỉnh sửa)
+favicon.ico / favicon-16.png / favicon-32.png / favicon-48.png / apple-touch-icon.png
+                                - Cắt từ icon "mũ trên chữ O" trong logo gốc PHOCO
+
+Lưu ý: một số ảnh thật (nón kết, nón bucket, nón phối lưới) có logo khách
+hàng cũ của PHOCO xuất hiện trong khung hình, giữ nguyên theo yêu cầu của
+Phong ngày 24/08/2026 ("DÙNG NGUYÊN ẢNH CỦA TÔI"). Đây là ảnh minh chứng
+năng lực sản xuất thực tế, không phải quảng cáo cho thương hiệu bên thứ ba.
+
+----------------------------------------------------
+(B) ẢNH STOCK MIỄN PHÍ BẢN QUYỀN (Pexels.com)
+----------------------------------------------------
+
+1. non-trum-dau-bao-ho-danh-muc.webp
+   Mô tả: Nữ công nhân xưởng may đội lưới trùm đầu bảo hộ, đang thao tác
+   máy may
+   Nguồn: Pexels - Ảnh của EqualStock IN
+   URL: https://www.pexels.com/photo/smiling-female-factory-workers-operating-sewing-machines-31030910/
+   Giấy phép: Pexels License (miễn phí sử dụng, kể cả mục đích thương mại)
+
+2. in-3d-pet-macro.webp
+   Mô tả: Cận cảnh macro móc khóa nhựa in logo phủ lớp bóng/nổi khối (kiểu
+   epoxy dome) - minh họa kỹ thuật "In 3D PET" (chưa tìm được ảnh Pexels
+   đúng 100% là tem dome PVC/PET trên nón, đây là ảnh gần đúng nhất có bề
+   mặt bóng, nổi khối, phủ lớp trong tương tự)
+   Nguồn: Pexels - Ảnh của Terrance Barksdale
+   URL: https://www.pexels.com/photo/a-texas-keychain-in-close-up-shot-13926006/
+   Giấy phép: Pexels License (miễn phí sử dụng, kể cả mục đích thương mại)
+   Đã cắt (crop) từ ảnh gốc, lấy vùng thẻ đỏ có bề mặt bóng/nổi khối rõ nhất.
+   Lưu ý: đây là ảnh minh họa gần đúng nhất tìm được trên Pexels cho kỹ
+   thuật tem dome 3D PET/PVC (rất hiếm ảnh stock free đúng chủ đề này); nên
+   thay bằng ảnh thật PHOCO khi có.
+
+----------------------------------------------------
+GHI CHÚ CHUNG
+----------------------------------------------------
+- Theo yêu cầu ngày 24/08/2026, đã bỏ 3 danh mục "Nón phòng lạnh", "Mũ nồi
+  (beret)" và "Nón hip-hop không nóc" khỏi trang (ảnh stock tương ứng đã
+  được gỡ khỏi assets/images/). Trang hiện còn 8 danh mục nón.
+- Đã thay ảnh đúng cho "Nón bucket" (trước đó bị nhầm ảnh), thay ảnh stock
+  của "Nón bếp" bằng ảnh thật PHOCO, và nâng cấp ảnh "Nón phối lưới" bằng
+  ảnh thật rõ nét hơn.
+- Ảnh staff-portrait-1.webp cũng được dùng lại trong mục "Vì sao cần nón
+  đồng phục" ở đầu trang để tăng độ tin cậy ngay từ sớm.
+- Toàn bộ ảnh đã được nén sang định dạng WebP để tối ưu tốc độ tải trang,
+  giữ chất lượng ở mức quality=84, không ép cứng dưới một dung lượng cố định.
+- Khi thay ảnh mới, giữ nguyên tỷ lệ khung hình gần với ảnh gốc để không vỡ
+  bố cục (ảnh danh mục sản phẩm: tỉ lệ dọc ~3:4, ảnh gallery: tỉ lệ dọc
+  ~3:4, ảnh vuông/ngang riêng 1 vài vị trí đã ghi chú ở trên).
+- Nếu Pexels gỡ ảnh hoặc đổi điều khoản trong tương lai, cần kiểm tra lại
+  link nguồn trước khi tiếp tục sử dụng.
