@@ -194,8 +194,6 @@
     var formCard = form.closest(".form-card") || form.parentElement;
     var statusBox = formCard ? formCard.querySelector(".form-status") : null;
     var submitBtn = form.querySelector('button[type="submit"]');
-    var demoNoteEl = form.querySelector(".demo-note");
-    if (demoNoteEl && GOOGLE_SHEET_WEBHOOK_URL) demoNoteEl.style.display = "none";
 
     function setStatus(type, message) {
       if (!statusBox) return;
@@ -275,6 +273,8 @@
           ? needSelect.options[needSelect.selectedIndex].text
           : "";
       data.append("need", needText);
+      var logoField = form.querySelector("#qf-logo");
+      data.append("logo_link", logoField ? logoField.value.trim() : "");
       data.append("note", form.querySelector("#qf-note").value.trim());
       return data;
     }
@@ -322,7 +322,7 @@
             "Đã ghi nhận yêu cầu. PHOCO sẽ liên hệ lại sớm nhất qua số điện thoại bạn cung cấp." +
               demoNote
           );
-           if (typeof fbq === "function") fbq("track", "Lead");
+          if (typeof fbq === "function") fbq("track", "Lead");
           if (submitBtn) submitBtn.removeAttribute("disabled");
           form.reset();
         })
@@ -385,11 +385,21 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
-   /* ---------- Meta Pixel: su kien Contact khi khach bam goi/Zalo/Messenger ---------- */
-   document.addEventListener("click", function (e) {
-      var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href*="m.me/"], a[href*="zalo.me/"]');
-      if (link && typeof fbq === "function") {
-         fbq("track", "Contact");
-      }
-   });
+  /* ---------- Meta Pixel: sự kiện Contact khi khách bấm gọi/Zalo/Messenger ---------- */
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href*="m.me/"], a[href*="zalo.me/"]');
+    if (link && typeof fbq === "function") {
+      fbq("track", "Contact");
+    }
+  });
+
+  /* ---------- Meta Pixel: sự kiện riêng khi khách bấm nút "Nhận báo giá"
+     (trước khi thật sự gửi form - đo lượt quan tâm, tách biệt với sự
+     kiện Lead chỉ tính khi gửi form thành công) ---------- */
+  document.addEventListener("click", function (e) {
+    var cta = e.target.closest && e.target.closest("[data-fb-event]");
+    if (cta && typeof fbq === "function") {
+      fbq("trackCustom", cta.getAttribute("data-fb-event"));
+    }
+  });
 })();
