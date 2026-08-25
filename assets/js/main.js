@@ -356,6 +356,7 @@
               demoNote
           );
           if (typeof fbq === "function") fbq("track", "Lead");
+          if (typeof gtag === "function") gtag("event", "generate_lead");
           if (submitBtn) submitBtn.removeAttribute("disabled");
           form.reset();
         })
@@ -434,11 +435,12 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
-  /* ---------- Meta Pixel: sự kiện Contact khi khách bấm gọi/Zalo/Messenger ---------- */
+  /* ---------- Meta Pixel + GA4: sự kiện Contact khi khách bấm gọi/Zalo/Messenger ---------- */
   document.addEventListener("click", function (e) {
     var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href*="m.me/"], a[href*="zalo.me/"]');
-    if (link && typeof fbq === "function") {
-      fbq("track", "Contact");
+    if (link) {
+      if (typeof fbq === "function") fbq("track", "Contact");
+      if (typeof gtag === "function") gtag("event", "contact");
     }
   });
 
