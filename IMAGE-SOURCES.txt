@@ -65,8 +65,8 @@ gallery-coopxtra.webp          - Ảnh thật PHOCO (do Phong cung cấp 24/08/2
 kho-vai-nguyen-lieu.webp       - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - kho vải
                                   nguyên liệu nhiều màu sắc tại xưởng)
 tac-gia-truong-huu-tien.webp   - Ảnh thật do Phong cung cấp 25/08/2026 - chân dung anh
-                                  Trương Hữu Tiến (dự kiến dùng cho Author Card, đang chờ
-                                  nội dung bio gốc gửi lại - xem README mục 14)
+                                  Trương Hữu Tiến, dùng cho Card "Người Phụ Trách Nội Dung
+                                  PHOCO" trong section xưởng/đội ngũ (xem README mục 15)
 review-truong-quang-hung.webp  - Ảnh thật do Phong cung cấp 25/08/2026 - chân dung anh
                                   Trương Quang Hưng, CEO Công ty CP Nhật Minh Building,
                                   dùng cho section Review khách hàng

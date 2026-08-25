@@ -1,7 +1,7 @@
 LANDING PAGE NÓN ĐỒNG PHỤC PHOCO - README
 ============================================
 Bàn giao ngày: 24/08/2026
-Cập nhật gần nhất: 25/08/2026 (xem mục 14)
+Cập nhật gần nhất: 25/08/2026 (xem mục 15)
 
 1. NỘI DUNG GÓI FILE
 ---------------------
@@ -425,24 +425,91 @@ LƯU Ý:
   trên, 1 ảnh công đoạn may và 1 ảnh máy thêu Tajima (xem chi tiết
   trong IMAGE-SOURCES.txt).
 
-CHƯA LÀM (cần Phong gửi lại vì nội dung gốc đã bị mất khi hệ thống
-tự động rút gọn lịch sử chat - không phải do quên, mà do giới hạn kỹ
-thuật khi cuộc trò chuyện quá dài):
-- Author Card cho anh Trương Hữu Tiến: đã có ảnh thật, NHƯNG đoạn bio
-  Phong viết sẵn để dùng nguyên văn đã không còn lưu được trong phiên
-  làm việc này. Để tránh tự viết lại nội dung khác với ý Phong (yêu
-  cầu ban đầu là dùng "nguyên văn, không thêm bớt"), mục này CHƯA làm
-  - cần Phong gửi lại đúng đoạn bio + tiêu đề + link Facebook/LinkedIn
-  (nếu có) để hoàn thiện.
-- Thứ tự hiển thị mới của 8 loại nón, nội dung bảng "Chọn loại nón
-  nào?", nội dung bảng so sánh kỹ thuật In/Thêu, và thứ tự đầy đủ 12
-  câu FAQ theo đúng danh sách Phong đã liệt kê trong yêu cầu gốc -
-  cũng bị mất nội dung chi tiết vì lý do tương tự. Hiện tại các phần
-  này vẫn giữ nguyên như bản trước (chưa đổi thứ tự sản phẩm, chưa
-  đổi In/Thêu sang dạng bảng, FAQ mới chỉ được thêm vào cuối danh
-  sách cũ thay vì đúng vị trí trong thứ tự 12 câu).
-- Chưa tạo trang Chính sách bảo mật / Điều khoản sử dụng (đang chờ
-  Phong xác nhận ngoại lệ cho yêu cầu "không tạo thêm trang con").
+CHƯA LÀM ở đợt 25/08 buổi sáng (đã hoàn thiện ở mục 15 bên dưới sau
+khi Phong gửi lại file đặc tả gốc ĐẶC TẢ.docx):
+- Author Card, thứ tự 8 loại nón, bảng "Chọn loại nón nào?", bảng
+  In/Thêu, thứ tự 12 câu FAQ -> Xem mục 15.
+
+Vẫn còn thiếu / cần Phong xác nhận thêm:
+- Chưa tạo trang Chính sách bảo mật / Điều khoản sử dụng (đặc tả gốc
+  vừa yêu cầu có link chính sách ở footer, vừa yêu cầu "không tạo
+  thêm URL/trang con" - hai yêu cầu này mâu thuẫn nên vẫn đang chờ
+  Phong chọn 1 trong 2 hướng: (a) làm 1 trang riêng dù phá vỡ quy tắc
+  một trang, hoặc (b) bỏ qua link chính sách vì trang chỉ thu thập
+  tên/SĐT để tư vấn, không lưu trữ dữ liệu nhạy cảm).
 - Chưa gắn Google Ads Conversion ID / GA4 (chưa có mã).
+- Chưa có "Giờ làm việc" cụ thể để thêm vào Footer (đặc tả yêu cầu
+  nhưng Phong chưa cung cấp).
 - robots.txt / thẻ noindex VẪN đang chặn index như yêu cầu trước đó
   của Phong - sẽ chỉ gỡ khi Phong xác nhận đã ưng ý giao diện.
+
+15. HOÀN THIỆN CÁC MỤC CÒN THIẾU SAU KHI NHẬN LẠI FILE ĐẶC TẢ GỐC
+(cập nhật 25/08/2026, buổi chiều)
+--------------------------------------------------------------
+Phong đã gửi lại toàn bộ file đặc tả gốc (ĐẶC TẢ.docx, 32 mục), nên
+đã hoàn thiện đúng nguyên văn các phần trước đó còn thiếu:
+- Card "Người Phụ Trách Nội Dung PHOCO" cho anh Trương Hữu Tiến, đặt
+  trong section "PHOCO, Xưởng May Nón Trực Tiếp Tại TP.HCM" (sau ảnh
+  đội ngũ/xưởng, trước phần Giá) theo đúng vị trí đặc tả yêu cầu.
+  Dùng đúng nguyên văn tiêu đề, vai trò và đoạn giới thiệu Phong đã
+  viết sẵn, không thêm số năm kinh nghiệm/chức danh/thành tích nào
+  khác. Có 4 badge mô tả phạm vi nội dung, dòng "Cập nhật lần cuối:
+  25/08/2026" (ngày cập nhật thủ công, vì trang là site tĩnh không có
+  cơ chế tự động lấy ngày sửa nội dung - cần tự sửa ngày này mỗi khi
+  cập nhật nội dung quan trọng). Không có nút CTA bán hàng nào trong
+  card này theo đúng yêu cầu. Đã thêm Schema.org Person tương ứng.
+- Đổi thứ tự 8 loại nón đúng theo đặc tả: Nón kết, Nón bucket, Nón
+  tai bèo, Nón phối lưới, Nón snapback, Nón nửa đầu, Nón bếp, Nón
+  trùm đầu (đồng bộ luôn danh sách chọn trong form báo giá).
+- Thêm section mới "Chọn Loại Nón Phù Hợp Với Nhu Cầu" (bảng Nhu cầu
+  / Loại nón phù hợp, 7 dòng) ngay sau section sản phẩm, đúng nội
+  dung bảng trong đặc tả, không tạo link sang trang khác.
+- Đổi phần "In, Thêu Logo Lên Nón" sang có thêm bảng so sánh (Phương
+  pháp / Phù hợp / Ưu điểm) đúng nội dung đặc tả, đồng thời vẫn giữ
+  3 ảnh thật minh họa kỹ thuật (không xóa ảnh vì đây là bằng chứng
+  xưởng thật, đặc tả không yêu cầu bỏ ảnh). Đổi câu ghi chú và nút CTA
+  thành "Gửi logo để PHOCO tư vấn kỹ thuật phù hợp." / "Gửi Logo Tư
+  Vấn" đúng nguyên văn đặc tả.
+- Sắp xếp lại đúng thứ tự 12 câu FAQ theo đặc tả (Giá -> MOQ -> Thời
+  gian -> Thiết kế -> In/thêu -> Duyệt mẫu -> Chất liệu -> Số lượng
+  ít -> Giao toàn quốc -> Hóa đơn -> Đơn gấp -> Quy trình), thêm 3
+  câu hỏi mới đúng yêu cầu ("Có hỗ trợ thiết kế không?", "Có được
+  duyệt mẫu trước khi sản xuất không?", "Có giao toàn quốc không?")
+  với câu trả lời dựa trên thông tin đã xác nhận sẵn có trên trang
+  (thiết kế miễn phí, duyệt mẫu ở bước quy trình, giao toàn quốc ở
+  USP/trust bar) - không phải thông tin mới bịa ra. 3 câu FAQ cũ
+  không nằm trong danh sách 12 câu của đặc tả (đối tượng sử dụng, giá
+  rẻ có đảm bảo chất lượng, nón cờ đỏ sao vàng) được giữ lại và xếp
+  cuối cùng vì vẫn là nội dung thật, hữu ích, đặc tả không yêu cầu
+  xóa. Đồng bộ thứ tự này trong cả Schema.org FAQPage.
+- Bổ sung câu bắt buộc "Khách hàng duyệt mẫu trước khi PHOCO sản xuất
+  hàng loạt." vào bước 2 "Duyệt mẫu" trong Quy trình 5 bước.
+- Cập nhật Title thẻ và Meta Description đúng nguyên văn đặc tả:
+  "Xưởng May Nón Đồng Phục Theo Yêu Cầu Tại TP.HCM | PHOCO" và đoạn
+  mô tả tương ứng (đồng bộ luôn Open Graph, Twitter Card).
+  Cập nhật/đồng bộ các thẻ H2 chính theo đúng danh sách đặc tả mục
+  XXI: "Các Dòng Nón Đồng Phục PHOCO", "Hình Ảnh Nón Đồng Phục PHOCO
+  Đã Sản Xuất", "PHOCO, Xưởng May Nón Trực Tiếp Tại TP.HCM" (đổi dấu
+  gạch ngang "-" trong đặc tả thành dấu phẩy để không dùng ký tự em
+  dash), "Giá Nón Đồng Phục" (thêm h2 semantic mới cho section Giá,
+  trước đây chỉ có phần giá nổi bật mà chưa có tiêu đề h2 đúng chuẩn).
+- Cập nhật nội dung section "PHOCO, Xưởng May Nón Trực Tiếp Tại
+  TP.HCM": viết lại đoạn giới thiệu ~70 từ theo đúng khung nội dung
+  đặc tả yêu cầu (địa điểm, năng lực, quy trình, đội ngũ, nhận đơn từ
+  10 cái, giao toàn quốc) - toàn bộ dựa trên thông tin đã xác nhận
+  sẵn có trên trang, không có số liệu mới nào bị thêm vào.
+- Đổi heading + nút CTA phần Form liên hệ đúng đặc tả mục XVII: heading
+  "Gửi Thông Tin, Nhận Báo Giá Nón Đồng Phục", nút submit đổi từ "Gửi
+  Yêu Cầu Báo Giá" thành "Nhận Báo Giá" (đặc tả yêu cầu tránh cụm "Gửi
+  yêu cầu báo giá" vì yếu hơn về hành động).
+- Thêm dòng Zalo vào Footer (dùng đúng số hotline đã có, đặc tả yêu
+  cầu Footer có mục Zalo riêng).
+
+Còn 1 điểm nhỏ đặc tả có đề cập nhưng CHƯA làm để tránh suy diễn số
+liệu: mục XII đặc tả muốn mỗi ảnh trong thư viện gắn nhãn "Loại nón |
+Kỹ thuật logo | Ngành sử dụng" nếu xác định được. Vì phần lớn ảnh
+trong thư viện hiện tại không có thông tin ngành hàng cụ thể được
+xác nhận (trừ 2 ảnh Superpro và Co.opXtra đã có tên khách hàng thật),
+gắn nhãn "ngành sử dụng" cho từng ảnh còn lại sẽ là suy đoán - nên
+mục này tạm giữ nguyên (chỉ dùng ALT text mô tả), sẽ bổ sung khi
+Phong xác nhận rõ ngành hàng cho từng ảnh muốn gắn nhãn.
