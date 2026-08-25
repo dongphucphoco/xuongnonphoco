@@ -349,6 +349,16 @@ section{ padding: 56px 0; }
   color: var(--color-navy);
 }
 .persona-card p{ font-size: 15.5px; color: var(--color-text-muted); }
+.persona-note{
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14.5px;
+  color: var(--color-text-muted);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.persona-note a{ color: var(--color-navy); font-weight: 700; text-decoration: underline; }
 
 /* ---------- 8. Product categories (catalog-style cards) ---------- */
 .product-grid{
@@ -700,6 +710,24 @@ section{ padding: 56px 0; }
 .final-cta-box .btn-primary:hover{ background: rgba(255,255,255,0.9); }
 .final-cta-box .btn-outline-light:hover{ background: rgba(255,255,255,0.18); }
 
+/* ---------- 13c. Quy trình sản xuất thật (3 ảnh minh chứng) ---------- */
+.process-photos{
+  display: grid; grid-template-columns: 1fr; gap: 14px;
+  margin-bottom: 32px;
+}
+.process-photo{
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: var(--color-bg-alt);
+  text-align: center;
+}
+.process-photo img{ width: 100%; height: 220px; object-fit: cover; display: block; }
+.process-photo figcaption{
+  padding: 10px; font-size: 14px; font-weight: 700; color: var(--color-navy);
+  background: #fff;
+}
+
 /* ---------- 14. Gallery ---------- */
 .gallery-grid{
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
@@ -790,6 +818,33 @@ section{ padding: 56px 0; }
   transition: max-height .3s ease, padding .3s ease;
 }
 .faq-answer p{ padding: 0 4px 20px; color: var(--color-text-muted); font-size: 15.5px; }
+
+/* ---------- 15b. Reviews ---------- */
+.review-grid{
+  display: grid; grid-template-columns: 1fr; gap: 20px;
+  max-width: 900px; margin: 0 auto;
+}
+.review-card{
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 26px 24px;
+  box-shadow: var(--shadow-sm);
+}
+.review-card blockquote{
+  font-size: 16.5px;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.review-card figcaption{
+  display: flex; align-items: center; gap: 12px;
+}
+.review-card figcaption img{
+  width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
+}
+.review-name{ display: block; font-weight: 800; color: var(--color-navy); font-size: 15px; }
+.review-role{ display: block; font-size: 13.5px; color: var(--color-text-muted); }
 
 /* ---------- 16. Contact / Form ---------- */
 .contact-section{ background: var(--color-bg-alt); }
@@ -888,6 +943,8 @@ section{ padding: 56px 0; }
 }
 .footer-brand img{ width: auto; height: 32px; margin-bottom: 14px; }
 .footer-brand p{ font-size: 14px; max-width: 340px; color: rgba(255,255,255,0.65); }
+.footer-brand p strong{ color: rgba(255,255,255,0.92); }
+.footer-tax{ font-size: 12.5px; color: rgba(255,255,255,0.5); margin-top: 8px; }
 .footer-social{ display: flex; gap: 10px; margin-top: 18px; }
 .footer-social a{
   width: 36px; height: 36px; border-radius: 50%;
@@ -967,6 +1024,40 @@ section{ padding: 56px 0; }
 }
 .back-to-top.is-visible{ opacity: 1; visibility: visible; transform: translateY(0); }
 
+/* Mobile sticky CTA bar: chỉ hiện trên mobile/tablet, ẩn trên desktop
+   (đã có FAB stack nổi ở góc phải cho desktop). */
+.mobile-cta-bar{
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 97;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 -4px 20px rgba(0,26,77,0.14);
+  padding: 6px;
+  gap: 6px;
+}
+.mobile-cta-item{
+  flex: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 3px;
+  padding: 8px 4px;
+  border-radius: var(--radius-sm);
+  font-size: 12px; font-weight: 700;
+  color: var(--color-navy);
+}
+.mobile-cta-item svg{ flex-shrink: 0; }
+.mobile-cta-primary{
+  background: var(--color-orange);
+  color: #fff;
+}
+/* Ẩn FAB stack nổi trên mobile vì đã có thanh sticky đáy màn hình
+   thay thế chức năng tương đương, tránh trùng lặp UI. */
+@media (max-width: 1023px){
+  .fab-stack{ display: none; }
+  body{ padding-bottom: 62px; }
+}
+@media (min-width: 1024px){
+  .mobile-cta-bar{ display: none; }
+}
+
 /* ---------- 18. Responsive breakpoints ---------- */
 /* 390px - slightly larger phones: default styles above already fit */
 
@@ -979,6 +1070,8 @@ section{ padding: 56px 0; }
   .gallery-grid{ grid-template-columns: repeat(3, 1fr); }
   .usp-grid{ grid-template-columns: repeat(3, 1fr); }
   .persona-grid{ grid-template-columns: repeat(2, 1fr); }
+  .process-photos{ grid-template-columns: repeat(3, 1fr); }
+  .review-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (min-width: 768px){
@@ -1001,7 +1094,7 @@ section{ padding: 56px 0; }
   .hero-media{ flex: 0 0 44%; max-height: 460px; }
 
   .product-grid{ grid-template-columns: repeat(4, 1fr); }
-  .persona-grid{ grid-template-columns: repeat(4, 1fr); }
+  .persona-grid{ grid-template-columns: repeat(3, 1fr); }
   .gallery-grid{ grid-template-columns: repeat(4, 1fr); }
   .process-list{ grid-template-columns: repeat(5, 1fr); }
   .process-step{ flex-direction: column; text-align: center; }
@@ -1012,8 +1105,8 @@ section{ padding: 56px 0; }
 
 @media (min-width: 1280px){
   .header-phone{ display: flex; }
-  .main-nav ul{ gap: 26px; }
-  .main-nav a{ font-size: 14.5px; }
+  .main-nav ul{ gap: 18px; }
+  .main-nav a{ font-size: 14px; }
 }
 
 @media (min-width: 1440px){
