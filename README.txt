@@ -1,6 +1,7 @@
 LANDING PAGE NÓN ĐỒNG PHỤC PHOCO - README
 ============================================
 Bàn giao ngày: 24/08/2026
+Cập nhật gần nhất: 25/08/2026 (xem mục 14)
 
 1. NỘI DUNG GÓI FILE
 ---------------------
@@ -11,7 +12,8 @@ landing-page/
 │   ├── images/                -> Toàn bộ hình ảnh (WebP + logo + favicon)
 │   ├── css/style.css          -> Toàn bộ style, không dùng framework ngoài
 │   └── js/main.js             -> Menu di động, FAQ accordion, lightbox,
-│                                  form báo giá (demo mode)
+│                                  form báo giá (đã kết nối Google Sheet
+│                                  thật, xem mục 12)
 ├── IMAGE-SOURCES.txt          -> Nguồn gốc từng ảnh (ảnh thật PHOCO / ảnh
 │                                  stock Pexels kèm link + tác giả)
 └── README.txt                 -> File này
@@ -340,42 +342,107 @@ LƯU Ý:
   thường, vì chỉ cần gọi ra ngoài tới Google, không cần server riêng.
 
 
-
-13. GAN META PIXEL (FACEBOOK) DE CHAY REMARKETING
+13. GẮN META PIXEL (FACEBOOK) ĐỂ CHẠY REMARKETING
 ------------------------------------------------------------------
-TRANG THAI: DA KET NOI (cap nhat 25/08/2026).
-Website da gan san Meta Pixel (ma theo doi cua Facebook) ten
+TRẠNG THÁI: ĐÃ KẾT NỐI (cập nhật 25/08/2026).
+Website đã gắn sẵn Meta Pixel (mã theo dõi của Facebook) tên
 "PHOCO Website - Xuong Non Dong Phuc", ID Pixel: 1057577167259496,
-tao trong Trinh quan ly su kien (Events Manager) cua Facebook Business
-gan voi trang https://www.facebook.com/dongphucphoco/.
+tạo trong Trình quản lý sự kiện (Events Manager) của Facebook Business
+gắn với trang https://www.facebook.com/dongphucphoco/.
 
-Pixel nay tu dong ghi nhan MOI khach ghe website (ke ca khi ho khong
-bam nut nao), de ban co the vao Meta Ads Manager tao mot "Doi tuong
-tuy chinh" (Custom Audience) gom "Nguoi da truy cap website trong
-X ngay qua" roi chay quang cao nham lai (remarketing) toi nhom nay.
+Pixel này tự động ghi nhận MỌI khách ghé website (kể cả khi họ không
+bấm nút nào), để bạn có thể vào Meta Ads Manager tạo một "Đối tượng
+tuỳ chỉnh" (Custom Audience) gồm "Người đã truy cập website trong
+X ngày qua" rồi chạy quảng cáo nhắm lại (remarketing) tới nhóm này.
 
-Ngoai luot xem trang (su kien PageView), website con tu gui them 2
-su kien de do muc do quan tam cua khach:
-  - "Lead": khi khach gui form "Nhan Bao Gia" thanh cong.
-  - "Contact": khi khach bam so dien thoai, nut Zalo hoac Messenger
-    (ke ca cac nut noi goc man hinh).
-Cac su kien nay giup Facebook toi uu quang cao tot hon va cho phep
-tao doi tuong remarketing rieng cho nhom khach da co y dinh ro rang
-(vi du: da dien form nhung chua chot don).
+Ngoài lượt xem trang (sự kiện PageView), website còn tự gửi thêm 2
+sự kiện để đo mức độ quan tâm của khách:
+  - "Lead": khi khách gửi form "Nhận Báo Giá" thành công.
+  - "Contact": khi khách bấm số điện thoại, nút Zalo hoặc Messenger
+    (kể cả các nút nổi góc màn hình).
+Các sự kiện này giúp Facebook tối ưu quảng cáo tốt hơn và cho phép
+tạo đối tượng remarketing riêng cho nhóm khách đã có ý định rõ ràng
+(ví dụ: đã điền form nhưng chưa chốt đơn).
 
-Ma Pixel nam o dau file index.html (doan giua "Meta Pixel Code" va
-"End Meta Pixel Code"), va 2 doan goi su kien Lead/Contact nam trong
+Mã Pixel nằm ở đầu file index.html (đoạn giữa "Meta Pixel Code" và
+"End Meta Pixel Code"), và 2 đoạn gọi sự kiện Lead/Contact nằm trong
 assets/js/main.js.
 
-Muon xem so lieu, dang nhap Facebook roi vao:
+Muốn xem số liệu, đăng nhập Facebook rồi vào:
   business.facebook.com/events_manager2
-Muon tao quang cao remarketing, vao Meta Ads Manager > Doi tuong
-(Audiences) > Tao doi tuong tuy chinh > Luu luong truy cap trang web
-(Website traffic) > chon Pixel "PHOCO Website - Xuong Non Dong Phuc".
+Muốn tạo quảng cáo remarketing, vào Meta Ads Manager > Đối tượng
+(Audiences) > Tạo đối tượng tuỳ chỉnh > Lưu lượng truy cập trang web
+(Website traffic) > chọn Pixel "PHOCO Website - Xuong Non Dong Phuc".
 
-LUU Y:
-- Neu sau nay doi sang Pixel khac, chi can thay so ID Pixel
-  (1057577167259496) o 3 cho trong index.html (2 lan trong doan
-  script, 1 lan trong link anh noscript) bang ID Pixel moi.
-- Meta Pixel la tai san cua tai khoan Facebook Business dang quan ly
-  trang dongphucphoco, khong phu thuoc vao Google Sheet hay GitHub.
+LƯU Ý:
+- Nếu sau này đổi sang Pixel khác, chỉ cần thay số ID Pixel
+  (1057577167259496) ở 3 chỗ trong index.html (2 lần trong đoạn
+  script, 1 lần trong link ảnh <noscript>) bằng ID Pixel mới.
+- Meta Pixel là tài sản của tài khoản Facebook Business đang quản lý
+  trang dongphucphoco, không phụ thuộc vào Google Sheet hay GitHub.
+
+14. ĐỢT CHỈNH SỬA THEO YÊU CẦU 32 MỤC (cập nhật 25/08/2026)
+--------------------------------------------------------------
+Đợt này thực thi phần lớn các mục trong file review
+"landing-page-review-25-08-2026.md" mà Phong đã trả lời (Nhóm A/B).
+Đã làm xong:
+- Thêm section "Khách Hàng Nói Gì Về PHOCO" với 2 review thật (anh
+  Trương Quang Hưng - Nhật Minh Building, anh Nguyễn Thanh Trung -
+  Donagift), dùng đúng nội dung và ảnh chân dung Phong gửi.
+- Đổi danh sách chất liệu vải từ 4 loại (Kaki/Dù/Cotton/Kate) sang 6
+  loại đã xác nhận: Delin, Kaki Samsung, Kaki 65/35, Kaki Việt Nam,
+  Kaki Cotton, Vải dù. Mô tả đặc điểm từng loại là kiến thức chung phổ
+  biến trên thị trường (đã ghi rõ trong bảng), không phải số liệu kỹ
+  thuật riêng của PHOCO.
+- Thêm 2 câu FAQ mới (xuất hóa đơn VAT, nhận đơn gấp) với câu trả lời
+  thật Phong cung cấp, đồng bộ cả trong nội dung hiển thị và
+  Schema.org FAQPage.
+- Cập nhật footer: tên pháp lý "Công Ty TNHH Sản Xuất Thương Mại
+  PHOCO", mã số thuế 3703492907, email lienhe.phoco@gmail.com.
+- Thêm Schema.org Organization và Service (dùng thông tin đã xác
+  nhận: tên, địa chỉ, MST, email, hotline).
+- Sửa toàn bộ canonical/Open Graph/schema URL từ domain cũ
+  (www.phoco.vn) sang domain thật đang chạy: xuongnonphoco.com
+  (dạng không "www" - mặc định do chưa có phản hồi riêng, có thể đổi
+  lại nếu Phong muốn dùng dạng có "www").
+- Xóa hẳn dòng "Form đang chạy ở chế độ demo..." khỏi HTML (trước đây
+  chỉ ẩn bằng JS). Thêm trường "Link logo/hình mẫu" dạng text vào
+  form (phương án nhanh, chưa phải upload file thật lên Drive).
+- Thêm thanh CTA sticky ở đáy màn hình cho mobile (Gọi ngay / Zalo /
+  Nhận báo giá), ẩn FAB tròn nổi trên mobile để tránh trùng chức năng
+  (FAB tròn vẫn hiển thị bình thường trên desktop).
+- Thêm sự kiện Meta Pixel riêng "QuoteCTAClick" khi khách bấm các nút
+  "Nhận Báo Giá" (tách biệt với sự kiện "Lead" chỉ tính khi gửi form
+  thành công).
+- Thêm <link rel="preload"> cho ảnh Hero để cải thiện tốc độ tải.
+- Sắp xếp lại cấu trúc trang: rút gọn "Phù hợp nhiều ngành nghề" từ 9
+  xuống 6 nhóm, dời "Tại sao chọn PHOCO" ra sau Chất liệu, đổi thứ tự
+  Quy trình -> Thư viện ảnh -> Đội ngũ/Xưởng -> Giá, đổi thứ tự FAQ
+  đứng trước Form liên hệ, thêm 3 ảnh minh chứng "quy trình sản xuất
+  thật" (nguyên liệu, công đoạn may, công đoạn thêu) ngay trước thư
+  viện ảnh.
+- Thêm ảnh thật mới: chân dung anh Trương Hữu Tiến, 2 ảnh review nói
+  trên, 1 ảnh công đoạn may và 1 ảnh máy thêu Tajima (xem chi tiết
+  trong IMAGE-SOURCES.txt).
+
+CHƯA LÀM (cần Phong gửi lại vì nội dung gốc đã bị mất khi hệ thống
+tự động rút gọn lịch sử chat - không phải do quên, mà do giới hạn kỹ
+thuật khi cuộc trò chuyện quá dài):
+- Author Card cho anh Trương Hữu Tiến: đã có ảnh thật, NHƯNG đoạn bio
+  Phong viết sẵn để dùng nguyên văn đã không còn lưu được trong phiên
+  làm việc này. Để tránh tự viết lại nội dung khác với ý Phong (yêu
+  cầu ban đầu là dùng "nguyên văn, không thêm bớt"), mục này CHƯA làm
+  - cần Phong gửi lại đúng đoạn bio + tiêu đề + link Facebook/LinkedIn
+  (nếu có) để hoàn thiện.
+- Thứ tự hiển thị mới của 8 loại nón, nội dung bảng "Chọn loại nón
+  nào?", nội dung bảng so sánh kỹ thuật In/Thêu, và thứ tự đầy đủ 12
+  câu FAQ theo đúng danh sách Phong đã liệt kê trong yêu cầu gốc -
+  cũng bị mất nội dung chi tiết vì lý do tương tự. Hiện tại các phần
+  này vẫn giữ nguyên như bản trước (chưa đổi thứ tự sản phẩm, chưa
+  đổi In/Thêu sang dạng bảng, FAQ mới chỉ được thêm vào cuối danh
+  sách cũ thay vì đúng vị trí trong thứ tự 12 câu).
+- Chưa tạo trang Chính sách bảo mật / Điều khoản sử dụng (đang chờ
+  Phong xác nhận ngoại lệ cho yêu cầu "không tạo thêm trang con").
+- Chưa gắn Google Ads Conversion ID / GA4 (chưa có mã).
+- robots.txt / thẻ noindex VẪN đang chặn index như yêu cầu trước đó
+  của Phong - sẽ chỉ gỡ khi Phong xác nhận đã ưng ý giao diện.

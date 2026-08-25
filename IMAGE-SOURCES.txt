@@ -1,6 +1,6 @@
 NGUỒN HÌNH ẢNH - LANDING PAGE NÓN ĐỒNG PHỤC PHOCO
 ====================================================
-Cập nhật: 24/08/2026
+Cập nhật: 25/08/2026
 
 Có 2 nhóm ảnh trong thư mục assets/images/:
   (A) ẢNH THẬT do PHOCO cung cấp (sản phẩm, đội ngũ, xưởng PHOCO thực tế)
@@ -64,6 +64,21 @@ gallery-coopxtra.webp          - Ảnh thật PHOCO (do Phong cung cấp 24/08/2
                                   xưởng thêu với máy thêu Tajima phía sau)
 kho-vai-nguyen-lieu.webp       - Ảnh thật PHOCO (do Phong cung cấp 24/08/2026 - kho vải
                                   nguyên liệu nhiều màu sắc tại xưởng)
+tac-gia-truong-huu-tien.webp   - Ảnh thật do Phong cung cấp 25/08/2026 - chân dung anh
+                                  Trương Hữu Tiến (dự kiến dùng cho Author Card, đang chờ
+                                  nội dung bio gốc gửi lại - xem README mục 14)
+review-truong-quang-hung.webp  - Ảnh thật do Phong cung cấp 25/08/2026 - chân dung anh
+                                  Trương Quang Hưng, CEO Công ty CP Nhật Minh Building,
+                                  dùng cho section Review khách hàng
+review-nguyen-thanh-trung.webp - Ảnh thật do Phong cung cấp 25/08/2026 - chân dung anh
+                                  Nguyễn Thanh Trung, CEO Công ty SX TM Donagift, dùng
+                                  cho section Review khách hàng
+xuong-may-cong-doan-may-non.webp - Ảnh thật do Phong cung cấp 25/08/2026 - công nhân
+                                  đang may nón tại xưởng, dùng minh họa công đoạn sản
+                                  xuất (lưu ý: đây là ảnh công đoạn may, không phải ảnh
+                                  đóng gói thành phẩm - vẫn chưa có ảnh đóng gói thật)
+may-theu-tajima-cong-doan.webp - Ảnh thật do Phong cung cấp 25/08/2026 - máy thêu vi
+                                  tính Tajima đang thêu logo lên nhiều nón tại xưởng
 logo-phoco.png                 - Logo gốc do PHOCO cung cấp (không chỉnh sửa)
 favicon.ico / favicon-16.png / favicon-32.png / favicon-48.png / apple-touch-icon.png
                                 - Cắt từ icon "mũ trên chữ O" trong logo gốc PHOCO
