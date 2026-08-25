@@ -670,6 +670,78 @@ section{ padding: 56px 0; }
   color: var(--color-navy);
 }
 
+/* ---------- 12c. Author card (Trương Hữu Tiến) ---------- */
+.author-card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 760px;
+  margin: 40px auto 0;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.author-card-media{
+  flex: 0 0 auto;
+  width: 120px;
+  margin: 0 auto;
+}
+.author-card-media img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+.author-card-body{ text-align: center; }
+.author-card-label{
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  color: var(--color-orange);
+  margin-bottom: 4px;
+}
+.author-card-name{
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 2px;
+}
+.author-card-role{
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+}
+.author-card-bio{
+  font-size: 14.5px;
+  color: var(--color-text);
+  margin-bottom: 14px;
+}
+.author-card-badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.author-badge{
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-navy);
+  background: var(--color-bg-navy-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.author-card-updated{
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
 /* ---------- 13. Pricing ---------- */
 .pricing-section{
   background: linear-gradient(160deg, var(--color-navy) 0%, var(--color-navy-dark) 100%);
@@ -1080,6 +1152,10 @@ section{ padding: 56px 0; }
   .trust-bar ul{ flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 32px; }
   .hero-ctas{ flex-wrap: nowrap; }
   .contact-wrap{ grid-template-columns: 0.85fr 1.15fr; }
+  .author-card{ flex-direction: row; align-items: flex-start; text-align: left; padding: 28px; }
+  .author-card-media{ width: 160px; margin: 0; }
+  .author-card-body{ text-align: left; }
+  .author-card-badges{ justify-content: flex-start; }
   .footer-top{ grid-template-columns: 1.3fr repeat(3, 1fr); }
   .process-list{ grid-template-columns: repeat(2, 1fr); }
 }
