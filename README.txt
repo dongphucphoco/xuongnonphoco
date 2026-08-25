@@ -338,3 +338,44 @@ LƯU Ý:
   thêm dòng MailApp.sendEmail(...) vào trong hàm doPost() ở trên.
 - Cách này dùng được cả khi host trên GitHub Pages (mục 11) lẫn hosting
   thường, vì chỉ cần gọi ra ngoài tới Google, không cần server riêng.
+
+
+
+13. GAN META PIXEL (FACEBOOK) DE CHAY REMARKETING
+------------------------------------------------------------------
+TRANG THAI: DA KET NOI (cap nhat 25/08/2026).
+Website da gan san Meta Pixel (ma theo doi cua Facebook) ten
+"PHOCO Website - Xuong Non Dong Phuc", ID Pixel: 1057577167259496,
+tao trong Trinh quan ly su kien (Events Manager) cua Facebook Business
+gan voi trang https://www.facebook.com/dongphucphoco/.
+
+Pixel nay tu dong ghi nhan MOI khach ghe website (ke ca khi ho khong
+bam nut nao), de ban co the vao Meta Ads Manager tao mot "Doi tuong
+tuy chinh" (Custom Audience) gom "Nguoi da truy cap website trong
+X ngay qua" roi chay quang cao nham lai (remarketing) toi nhom nay.
+
+Ngoai luot xem trang (su kien PageView), website con tu gui them 2
+su kien de do muc do quan tam cua khach:
+  - "Lead": khi khach gui form "Nhan Bao Gia" thanh cong.
+  - "Contact": khi khach bam so dien thoai, nut Zalo hoac Messenger
+    (ke ca cac nut noi goc man hinh).
+Cac su kien nay giup Facebook toi uu quang cao tot hon va cho phep
+tao doi tuong remarketing rieng cho nhom khach da co y dinh ro rang
+(vi du: da dien form nhung chua chot don).
+
+Ma Pixel nam o dau file index.html (doan giua "Meta Pixel Code" va
+"End Meta Pixel Code"), va 2 doan goi su kien Lead/Contact nam trong
+assets/js/main.js.
+
+Muon xem so lieu, dang nhap Facebook roi vao:
+  business.facebook.com/events_manager2
+Muon tao quang cao remarketing, vao Meta Ads Manager > Doi tuong
+(Audiences) > Tao doi tuong tuy chinh > Luu luong truy cap trang web
+(Website traffic) > chon Pixel "PHOCO Website - Xuong Non Dong Phuc".
+
+LUU Y:
+- Neu sau nay doi sang Pixel khac, chi can thay so ID Pixel
+  (1057577167259496) o 3 cho trong index.html (2 lan trong doan
+  script, 1 lan trong link anh noscript) bang ID Pixel moi.
+- Meta Pixel la tai san cua tai khoan Facebook Business dang quan ly
+  trang dongphucphoco, khong phu thuoc vao Google Sheet hay GitHub.
