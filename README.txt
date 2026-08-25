@@ -513,3 +513,58 @@ xác nhận (trừ 2 ảnh Superpro và Co.opXtra đã có tên khách hàng th�
 gắn nhãn "ngành sử dụng" cho từng ảnh còn lại sẽ là suy đoán - nên
 mục này tạm giữ nguyên (chỉ dùng ALT text mô tả), sẽ bổ sung khi
 Phong xác nhận rõ ngành hàng cho từng ảnh muốn gắn nhãn.
+
+16. TỐI ƯU UI/UX TOÀN TRANG (cập nhật 25/08/2026, buổi tối)
+--------------------------------------------------------------
+Theo yêu cầu tối ưu bố cục, hiển thị và hiệu ứng trên cả mobile/
+tablet/desktop, đã thực hiện các thay đổi sau (chỉ chỉnh CSS/HTML/JS
+trình bày, không đổi nội dung/số liệu/lời văn nào):
+- Hero: đổi tỉ lệ desktop thành khoảng 45/55 (chữ/ảnh), ảnh sản phẩm
+  lớn hơn, nút CTA chính đậm và nổi bật hơn (đổ bóng cam rõ hơn).
+- Rà lại toàn bộ nhịp nền trắng/xám xen kẽ giữa các section để trang
+  đỡ dài và nặng mắt hơn khi cuộn.
+- Card 8 loại nón: bo góc 14px, ảnh giữ đúng tỉ lệ 3:4 gốc (không ép
+  vuông để tránh cắt mất chi tiết sản phẩm), lưới desktop đổi từ 4
+  xuống 3 cột (ảnh to hơn), 4 cột trở lại ở màn hình rất rộng (≥1440px).
+- Section "In, Thêu Logo Lên Nón": bỏ bảng so sánh (Phương pháp/Phù
+  hợp/Ưu điểm) được thêm ở đợt cập nhật trước để tránh lặp nội dung
+  với 3 card kỹ thuật minh họa bằng ảnh thật - gộp thông tin "Phù hợp"
+  vào ngay trong mô tả từng card.
+- Bảng "Chọn Loại Nón Phù Hợp Với Nhu Cầu": trên mobile (dưới 768px)
+  tự động đổi từ bảng sang danh sách card xếp dọc để không phải cuộn
+  ngang; trên tablet/desktop vẫn hiển thị dạng bảng như cũ. Nội dung
+  7 dòng giữ nguyên, không đổi.
+- Gallery và card sản phẩm: thêm thao tác vuốt trái/phải để chuyển
+  ảnh trong lightbox trên điện thoại (bên cạnh click chuột/bàn phím
+  đã có sẵn từ trước).
+- Card "Người Phụ Trách Nội Dung PHOCO" (anh Trương Hữu Tiến): chỉ
+  chỉnh trình bày cho nổi bật vừa phải hơn (ảnh đại diện tròn, viền
+  cam phía trên, nền gradient nhạt, đổ bóng rõ hơn) - toàn bộ nội
+  dung chữ giữ nguyên 100% không đổi một từ nào.
+- Section "Quy Trình Đặt Hàng": trên desktop thêm đường kẻ ngang nhẹ
+  nối giữa 5 bước dạng timeline (01 -> 05); trên mobile vẫn xếp dọc
+  như cũ.
+- Form "Nhận Báo Giá": trên desktop 2 trường Họ tên/Số điện thoại và
+  2 trường Số lượng/Nhu cầu xếp thành 2 cột cho gọn; trên mobile vẫn
+  xếp 1 cột như cũ. Không thêm chức năng tải lên file/hình ảnh nào.
+- Thanh CTA nổi trên mobile (Gọi ngay | Zalo | Nhận báo giá): tự ẩn
+  xuống khi khách cuộn tới đúng khu vực Form liên hệ (tránh che nút
+  gửi thật của form), hiện lại khi cuộn ra khỏi khu vực đó.
+- Hiệu ứng hiển thị khi cuộn (fade + dịch chuyển nhẹ): rút thời gian
+  từ 0.7s xuống còn 0.45s cho gọn hơn, đúng khoảng 400-500ms.
+- Chuẩn hoá lại tất cả hiệu ứng hover của card (sản phẩm, nhân sự,
+  đối tượng sử dụng, kỹ thuật in/thêu, lý do chọn PHOCO...) về cùng
+  một mức phóng to nhẹ khoảng 1.03 lần, bỏ hẳn kiểu "nhấc card lên"
+  (translateY) trước đây để đồng bộ và bớt giật hình khi rê chuột.
+- Gỡ bỏ hiệu ứng nhấp nháy liên tục (pulse) trên nút hotline nổi ở
+  góc màn hình - đây là hiệu ứng lặp vô hạn không cần thiết, không
+  đúng tinh thần "không hiệu ứng chạy liên tục" nên đã bỏ.
+- Đã kiểm tra lại toàn bộ trang trên các độ rộng màn hình mobile
+  (~390-600px), tablet (~768px) và desktop (~1024-1440px): không còn
+  hiện tượng vỡ bố cục hay tràn ngang (horizontal scroll) ở section
+  nào.
+Các mục vốn đã đúng yêu cầu từ trước, không cần chỉnh thêm: header
+dính khi cuộn (sticky) với nút "Nhận Báo Giá" luôn hiện rõ, menu cuộn
+mượt (smooth scroll) đến từng section, nút Back to Top, FAQ dạng
+accordion chỉ mở 1 câu một lúc, review khách hàng dạng card tĩnh
+(không tự động chạy carousel).
