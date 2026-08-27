@@ -308,7 +308,8 @@
       data.append("need", needText);
       var logoField = form.querySelector("#qf-logo");
       data.append("logo_link", logoField ? logoField.value.trim() : "");
-      data.append("note", form.querySelector("#qf-note").value.trim());
+      var noteField = form.querySelector("#qf-note");
+      data.append("note", noteField ? noteField.value.trim() : "");
       return data;
     }
 
