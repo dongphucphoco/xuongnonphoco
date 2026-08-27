@@ -357,6 +357,7 @@
           );
           if (typeof fbq === "function") fbq("track", "Lead");
           if (typeof gtag === "function") gtag("event", "generate_lead");
+           if (typeof gtag === "function") { gtag("event", "conversion", { send_to: "AW-18410872695/17vzCLzX_uccEPe-_spE", value: 1.0, currency: "VND" }); }
           if (submitBtn) submitBtn.removeAttribute("disabled");
           form.reset();
         })
