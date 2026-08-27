@@ -1202,7 +1202,7 @@ section{ padding: 56px 0; }
   section{ padding: 72px 0; }
   .hero{ padding: 64px 0 76px; }
   .trust-bar ul{ flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 24px 28px; }
-  .hero-ctas{ flex-wrap: nowrap; }
+  .hero-ctas{ flex-wrap: wrap; }
   .contact-wrap{ grid-template-columns: 0.85fr 1.15fr; }
   .author-card{ flex-direction: row; align-items: flex-start; text-align: left; padding: 28px; }
   .author-card-media{ width: 150px; margin: 0; }
@@ -1250,3 +1250,82 @@ section{ padding: 56px 0; }
 @media (min-width: 1440px){
   .container{ padding: 0 32px; }
 }
+
+/* ---------- Hero v2: price strip + split media (product + real workshop proof) ---------- */
+.hero-price-strip{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 14px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.22);
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+  max-width: fit-content;
+}
+.hero-price-amount{
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--color-orange);
+}
+.hero-price-sep{ opacity: .4; }
+.hero-price-note{
+  display: block;
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.62);
+  margin-bottom: 18px;
+}
+
+.hero-media.hero-media-split{
+  position: relative;
+  display: block;
+}
+/* Main product photo keeps the exact same box/crop as the original
+   single-image hero (full height, no extra squeeze) — only the small
+   proof badge below is new. */
+.hero-media-split > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-media-proof{
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  width: 118px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 6px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+}
+.hero-media-proof img{
+  width: 100%;
+  height: 84px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 9px;
+  display: block;
+}
+.hero-media-badge{
+  display: block;
+  margin-top: 6px;
+  font-size: 10.5px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--color-navy);
+  text-align: center;
+}
+
+@media (min-width: 1024px){
+  .hero-media-proof{ left: 22px; bottom: 22px; width: 150px; padding: 8px; }
+  .hero-media-proof img{ height: 110px; }
+  .hero-media-badge{ font-size: 12px; }
+}
+
+/* Tac gia section standalone (moved just above footer) */
+.author-section .author-card{ margin: 0 auto; max-width: 720px; }
