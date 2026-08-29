@@ -437,12 +437,25 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
-  /* ---------- Meta Pixel + GA4: sự kiện Contact khi khách bấm gọi/Zalo/Messenger ---------- */
+    /* ---------- Meta Pixel + GA4: sự kiện Contact khi khách bấm gọi/Zalo/Messenger ----------
+     Tách riêng theo từng kênh (gọi điện / Zalo / Messenger) để đo lường và báo cáo
+     tách bạch trên Google Analytics (GA4) và Google Ads. Meta Pixel vẫn giữ 1 sự
+     kiện "Contact" chung như cũ (không đổi, không ảnh hưởng remarketing Facebook). */
   document.addEventListener("click", function (e) {
     var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href*="m.me/"], a[href*="zalo.me/"]');
     if (link) {
       if (typeof fbq === "function") fbq("track", "Contact");
-      if (typeof gtag === "function") gtag("event", "contact");
+
+      var href = (link.getAttribute("href") || "").toLowerCase();
+      var gaEventName = "contact";
+      if (href.indexOf("tel:") === 0) {
+        gaEventName = "contact_phone";
+      } else if (href.indexOf("zalo.me/") !== -1) {
+        gaEventName = "contact_zalo";
+      } else if (href.indexOf("m.me/") !== -1) {
+        gaEventName = "contact_messenger";
+      }
+      if (typeof gtag === "function") gtag("event", gaEventName);
     }
   });
 
