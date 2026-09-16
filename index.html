@@ -1412,63 +1412,74 @@ section{ padding: 56px 0; }
 
 </style>
 
-<!-- Schema.org: LocalBusiness -->
+<!-- 1) Organization + LocalBusiness gộp thành 1 thực thể duy nhất, có @id -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "PHOCO",
-  "alternateName": "Xưởng May Nón PHOCO",
-  "image": "https://xuongnonphoco.com/assets/images/logo-phoco.png",
-  "telephone": "+84925949595",
-  "priceRange": "15.000₫ - 50.000₫",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "413/36 Lê Văn Quới",
-    "addressLocality": "Bình Trị Đông, Bình Tân",
-    "addressRegion": "Thành phố Hồ Chí Minh",
-    "addressCountry": "VN"
-  },
-  "url": "https://xuongnonphoco.com/"
-}
-</script>
-
-<!-- Schema.org: Organization -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Công Ty TNHH Sản Xuất Thương Mại PHOCO",
+  "@type": ["Organization", "LocalBusiness"],
+  "@id": "https://xuongnonphoco.com/#organization",
+  "name": "Xưởng May Nón PHOCO",
+  "legalName": "Công Ty TNHH Sản Xuất Thương Mại PHOCO",
   "alternateName": "PHOCO",
   "url": "https://xuongnonphoco.com/",
   "logo": "https://xuongnonphoco.com/assets/images/logo-phoco.png",
+  "image": "https://xuongnonphoco.com/assets/images/logo-phoco.png",
   "taxID": "3703492907",
-  "telephone": "+84925949595",
-  "email": "lienhe.phoco@gmail.com",
+  "telephone": "+84346868047",
+  "email": "lienhe.phoco02@gmail.com",
+  "priceRange": "15.000₫ - 50.000₫",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "413/36 Lê Văn Quới",
+    "streetAddress": "413/29A Lê Văn Quới",
     "addressLocality": "Bình Trị Đông, Bình Tân",
     "addressRegion": "Thành phố Hồ Chí Minh",
+    "postalCode": "71910",
     "addressCountry": "VN"
-  }
+  },
+  "sameAs": [
+    "https://maps.app.goo.gl/hneKAb3W1shFGwFF8",
+    "https://www.youtube.com/@xuongmaynonphoco"
+  ]
 }
 </script>
 
-<!-- Schema.org: Service (may nón đồng phục theo yêu cầu) -->
+<!-- 2) WebSite — mới, liên kết publisher về đúng Organization ở trên -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://xuongnonphoco.com/#website",
+  "url": "https://xuongnonphoco.com/",
+  "name": "Xưởng May Nón PHOCO",
+  "inLanguage": "vi",
+  "publisher": { "@id": "https://xuongnonphoco.com/#organization" }
+}
+</script>
+
+<!-- 3) WebPage — mới, đại diện cho chính trang landing page này -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://xuongnonphoco.com/#webpage",
+  "url": "https://xuongnonphoco.com/",
+  "name": "Xưởng May Nón Đồng Phục Theo Yêu Cầu Giá Rẻ | PHOCO",
+  "description": "PHOCO là xưởng may nón đồng phục trực tiếp, nhận từ 10 cái, may theo yêu cầu, in/thêu logo, đa dạng kiểu dáng và chất liệu. Nhận báo giá nhanh.",
+  "inLanguage": "vi",
+  "isPartOf": { "@id": "https://xuongnonphoco.com/#website" },
+  "about": { "@id": "https://xuongnonphoco.com/#organization" }
+}
+</script>
+
+<!-- 4) Service — GIỮ nguyên nội dung cũ, chỉ đổi "provider" thành @id
+       để trỏ về đúng Organization thay vì khai báo Organization rời rạc -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": "May nón, mũ đồng phục theo yêu cầu",
-  "provider": {
-    "@type": "Organization",
-    "name": "PHOCO"
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "Việt Nam"
-  },
+  "provider": { "@id": "https://xuongnonphoco.com/#organization" },
+  "areaServed": { "@type": "Country", "name": "Việt Nam" },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Các dòng nón đồng phục PHOCO",
